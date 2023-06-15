@@ -98,7 +98,6 @@ class _ComorderScreenState extends State<ComorderScreen> {
                                   ComModal order = ComModal(
                                     Name: productlist[index].Name,
                                     Price: productlist[index].Price,
-                                    pay: productlist[index].pay,
                                     Dis: productlist[index].Dis,
                                     Brand: productlist[index].Brand,
                                     email: productlist[index].email,

@@ -34,8 +34,6 @@ class _HviewScreenState extends State<HviewScreen> {
               Text(" Email : ${data.email}",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 15.sp,color: Colors.white)),
               SizedBox(height: 0.5.h,),
               Text(" Add : ${data.add}",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 15.sp,color: Colors.white)),
-              SizedBox(height: 0.5.h,),
-              Text(" Pay type : ${data.pay}",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 15.sp,color: Colors.white)),
               SizedBox(height: 3.h,),
               Text(" Product information",style: TextStyle(color: Colors.white,fontSize: 20.sp,fontWeight: FontWeight.bold),),
               SizedBox(height: 1.h,),

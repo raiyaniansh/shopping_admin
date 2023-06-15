@@ -41,7 +41,6 @@ class _OrderScreenState extends State<OrderScreen> {
                         Name: x['Name'],
                         Price: x['Price'],
                         Dis: x['Dis'],
-                        pay: x['Pay'],
                         Brand: x['Brand'],
                         Stock: x['Stock'],
                         cat: x['Cat'],

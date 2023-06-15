@@ -54,8 +54,6 @@ class _OviewScreenState extends State<OviewScreen> {
                   }
                 return Center(child: CircularProgressIndicator(color: Colors.white,));
               },stream: FireBase.fireBase.readuser(uid: data.key,),),
-              SizedBox(height: 0.5.h,),
-              Text(" Pay type : ${data.pay}",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 15.sp,color: Colors.white)),
               SizedBox(height: 3.h,),
               Text(" Product information",style: TextStyle(color: Colors.white,fontSize: 20.sp,fontWeight: FontWeight.bold),),
               SizedBox(height: 1.h,),
@@ -121,7 +119,7 @@ class _OviewScreenState extends State<OviewScreen> {
               SizedBox(height: 2.h,),
               InkWell(
                 onTap: () {
-                  FireBase.fireBase.Comorder(pay: data.pay,email: email,Name: data.Name,con: data.con,img: data.img,Brand: data.Brand,Dis: data.Dis,Price: data.Price,add: add,uName: uname);
+                  FireBase.fireBase.Comorder(email: email,Name: data.Name,con: data.con,img: data.img,Brand: data.Brand,Dis: data.Dis,Price: data.Price,add: add,uName: uname);
                   FireBase.fireBase.delet(data.xkey);
                   Get.back();
                 },

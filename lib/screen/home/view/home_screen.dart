@@ -228,7 +228,6 @@ class _HomeScreenState extends State<HomeScreen> {
                           OrderModal order = OrderModal(
                             Name: x['Name'],
                             Price: x['Price'],
-                            pay: x['Pay'],
                             Dis: x['Dis'],
                             Brand: x['Brand'],
                             Stock: x['Stock'],
@@ -279,15 +278,15 @@ class _HomeScreenState extends State<HomeScreen> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Container(width: 32.w,child: Text(overflow: TextOverflow.ellipsis,"${productlist[index].Name}",style: TextStyle(color: Colors.white))),
-                                      Text("Qua : ${productlist[index].con}",style: TextStyle(color: Colors.white)),
-                                      Text("${productlist[index].email}",style: TextStyle(color: Colors.white)),
+                                      Container(width: 32.w,child: Text(overflow: TextOverflow.ellipsis,"Qua : ${productlist[index].con}",style: TextStyle(color: Colors.white))),
+                                      Container(width: 32.w,child: Text(overflow: TextOverflow.ellipsis,"${productlist[index].email}",style: TextStyle(color: Colors.white))),
+
                                     ],
                                   ),
                                   Expanded(child: SizedBox()),
                                   ElevatedButton(onPressed: () {
                                     OrderModal order = OrderModal(
                                       Name: productlist[index].Name,
-                                      pay: productlist[index].pay,
                                       Price: productlist[index].Price,
                                       Dis: productlist[index].Dis,
                                       Brand: productlist[index].Brand,
